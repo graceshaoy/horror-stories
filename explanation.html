@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="method" class="level1">
 <h1>Method</h1>
-<p>To analyze trends in speculative fiction, I use data scraped by Carnegie Mellon University. The CMU book dataset is comprised of 16.5K books, with information such as author, published date, and summary from Wikipedia. I consider horror, science fiction, and gothic genres to be of interest in examining fears represented through literature. For a full list of genres included in the analysis, refer to appendix A. <br></p>
+<p>To analyze trends in speculative fiction, I use data scraped by Carnegie Mellon University. The CMU book dataset is comprised of 16.5K books, with information such as author, published date, and summary from Wikipedia. I consider horror, science fiction, and gothic genres to be of interest in examining fears represented through literature. For a full list of genres included in the analysis, refer to appendix A. <br> <br> To analyze the how horror stories are percieved to reflect cultural conditions</p>
 <p>Using a common method for computational text analysis, term frequency-inverse document frequency (TF-IDF), I identify the relevance of topics (monster, robot) within the summary of a book. The summaries were preprocessed using standard methods – removal of stopwords (e.g.&nbsp;“the”), lemmatization (reducing words to their root, e.g.&nbsp;“running” to “run”), and bigramization (freezing words pairs that appear frequently, e.g.&nbsp;“scary monster” to “scary_monster”). <br> <br> Since a majority of the books in the dataset were published recently, there is a baseline growth in relevance of most words. The one-hundred most ‘relevant’ words in the entire dataset were used to approximate this baseline growth. To get an accurate understanding of the change in relevance of topics of interest, the baseline was subtracted from the change in relevance of monsters and robots.</p>
 </section>
 <section id="results" class="level1">
@@ -261,6 +261,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><em>Figure 3: Relevance of Robots</em></p>
 <p>In this analysis, the words ‘robot’, ‘andriod’, ‘cyborg’, ‘automaton’, ‘droid’, and ‘humanoid’ are used to identify robots in stories. Since the first use of the word ‘robot’ was in 1920, I have limited the analysis here to 1920 onwards.<br> In Figure 3, the left figure demonstrates the growth in the relevance of robots in speculative fiction in relation to other genres. The right figure provides information on specific data points: Isaac Asimov’s works stand out as particularly focusing on robots.</p>
+<p>frankenstein [0.9831628 0. 2.53565699 0. 0.54285061 0. 0. 0. ] array([‘galvanism’, ‘rosseau’, ‘race’, ‘slavery’, ‘slave’, ‘imperialism’, ‘abolition’, ‘abolitionist’], dtype=object)</p>
+<p>hannibal [‘gender’ ‘sexuality’ ‘queer’ ‘homophobia’ ‘homophobic’ ‘gay’] array([0.18782966, 0.25971712, 0. , 0.16296904, 0.61624091, 0. ])</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
@@ -270,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A. Genres included in “speculative fiction”: horror, gothic, science fiction, alien, biopunk, cyberpunk, ghost, paranormal, science fantasy, speculative fiction, steampunk, supernatural, time travel, techno, time travel, vampire, zombie.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="explanation_files/figure-html/86d88ecb-1-liwc.png" class="img-fluid figure-img"></p>
+<p><img src="explanation_files/figure-html/f4fead4f-1-liwc.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">liwc.png</figcaption><p></p>
 </figure>
 </div>
